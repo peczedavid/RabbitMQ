@@ -21,7 +21,7 @@ function App() {
           const options = { minimumIntegerDigits: 2, useGrouping: false };
 
           const year = current.getFullYear();
-          const month = current.getMonth().toLocaleString("en-US", options);
+          const month = (current.getMonth() + 1).toLocaleString("en-US", options);;
           const day = current.getDate().toLocaleString("en-US", options);
 
           const hour = current.getHours().toLocaleString("en-US", options);
